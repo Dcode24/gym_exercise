@@ -46,12 +46,12 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
       <Typography variant="h3" mb="46px">
         Showing Results
       </Typography>
-      <stack direction="row" sx={{ gap: {lg: '110px', xs: '50px'}}} flexWrap="wrap" justifyContent="center">
+      <Stack direction="row" sx={{ gap: {lg: '110px', xs: '50px'}}} flexwrap="wrap" justifycontent="center">
         {currentExercises.map((exercise, index) => (
           <ExerciseCard key={index} exercise=
           {exercise} />
         ))}
-      </stack>
+      </Stack>
       <Stack mt="100px" alignItems="center">
           {exercises.length> 9 && (
             <Pagination
